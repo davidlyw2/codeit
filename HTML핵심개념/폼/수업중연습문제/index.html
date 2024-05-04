@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <form> 태그
+    * <label></label> : 
+    * <input> : 사용자 입력받기
+    * label과 input을 연결하는 2가지 방법
+      1) <label> 이메일 <input> </label> 감싸는 방법
+      2) <label for="input_id">이메일</label> id 이용하는 방법
+         <input id="input_id" name="전송이름"> : 
+    * input으로 입력받은 데이터를 서버로 전송하기 위해서는 'name'을 정해야 함.
+      <input id="input_id" name="전송위한이름">
+    
+    * <button></button>
+      1) type: "button" 아무 동작하지 않는다.
+               "submit" 폼 안에 있는 인풋의 내용들을 전송한다.
+               "reset" 폼 안의 인풋 안의 내용들을 초기화한다.
+      2) <form> 바깥에 위치한 버튼은 아무 영향을 끼치지 못한다.
+   -->
+  <form>
+    <!--  -->
+    <div>
+      <label for="signup-email">이메일</label>
+      <input id="signup-email" name="email" type="email">
+    </div>
+    <div>
+<!--       <label>비밀번호
+        <input id="signup-password" name="password" type="password">
+      </label> -->
+      <label for="signup-password">비밀번호</label>
+      <input id="signup-password" name="password" type="password">
+    </div>
+    <div>
+      <label for="signup-password-repeat">비밀번호확인</label>
+      <input id="signup-password-repeat" name="password-repeat" type="password">
+    </div>
+    <p>
+      <button type="submit">
+        확인
+      </button>
+      <button type="reset">
+        취소
+      </button>
+      <button type="button">
+        Type:button
+      </button>
+    </p>
+  </form>
+  <!-- <form> 바깥에 위치한 버튼은 그 폼에 아무 영향을 끼치지 못한다. -->
+  <p>
+    <hr>
+    <button type="submit">
+      Form 바깥 버튼
+    </button>
+  </p>
+
+  <hr>
+  <!-- 
+    검색버튼을 누르면 구글검색창에 입력한 값을 넘겨주기
+  -->
+  <form action="https://google.com/search">
+    <div>
+      <label for="search">검색</label>
+      <input id="search" name="search">
+    </div>
+    <p>
+      <button type="submit">검색</button>
+    </p>
+</form>
+
+  <hr>
+  <form method="post">
+    <div>
+      <p>
+        <label for="profile">프로필</label>
+        <input id="profile" name="profile" type="file">
+      </p>
+  </div>
+  <button type="submit">
+    확인
+  </button>
+  </form>
+
+</body>
+</html>

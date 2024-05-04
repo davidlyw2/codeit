@@ -1,0 +1,54 @@
+* {
+  /* 기본적으로 box의 크기는 content 박스의 크기를 기준으로 한다.
+     width, height를 설정하면 이것이 content의 크기가 되고
+     여기에 padding크기, border크기가 더해져서 실제 우리가 보는
+     border 박스의 크기는 width, height로 설정된 값보다 커지게 된다.
+
+     그래서, 현재는 CSS 파일의 맨 앞에 아래 코드를 넣고 디자인 하는 것이 추세이다.
+  */
+
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #000000;
+  padding: 30px;
+}
+
+/*
+  너비와 높이를 100%로 유지한 채로 코드를 수정 안쪽 영역이 알맞게 꽉 차도록 
+*/
+.message {
+  /* 
+    이 100% 코드로 인하여 .message 클래스의  content 박스 크기는 parent 클래스인 
+    .box 클래스의 content 박스의 크기인 300px 가 된다.
+    그런데, 이 .message 박스에는 300px content 박스의 크기 + padding (24px) x 2의 크기가
+    더해진 348px의 border박스가 실제 크기가 된다.
+
+    .box 박스의 content 박스 안에 
+      .message Border 박스 = 
+        content박스 + padding *2 + border선 굵기 * 2 + margin * 2
+    가 온전히 들어가야 되는데, 
+    box-sizing의 기준이 기본이 content 박스의 크기이기 때문에 border 박스의 크기로 변경되지 않으면
+    문제가 발생한다.
+
+    (중요) 그래서 모든 box-sizing의 기준을 "border-box"로 설정하여 이러한 문제를 없앨 필요가 있다.
+    
+  */
+
+  box-sizing: border-box;
+  width: 100%;  
+  height: 100%;
+
+  font-size: 48px;
+  margin: 0;
+  padding: 24px;
+  color: #ffffff;
+  background-color: #000000;
+}

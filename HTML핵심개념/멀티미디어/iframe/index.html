@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>현재 상영작</h2>
+  <!--
+    frame: 화면을 여러 영역으로 나누어서 다른 html 파일을 보여주는 기능. 문제가 많아서 현재는 사용하지 않음.
+    iframe: frame의 inline 버전. HTML 문서 안에서 다른 HTML 문서를 보여주는 태그
+    용도: 지도를 넣거나 온라인쇼핑에서 결제창을 띄울 때, 코드잇 동영상 강의
+
+    source=""
+    width=""
+    height=""
+  -->
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/i0bT8h5c8QY?si=sCXFOY_mRhWcmHCs" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+
+  <iframe src="current.html" width="479" height="6400">
+  </iframe>
+</body>
+</html>

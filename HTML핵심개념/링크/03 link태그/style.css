@@ -1,0 +1,15 @@
+/* h1 제목에 글자색 입히기 */
+h1 {
+  color: #454fbc;
+  padding: 20px;
+}
+
+.head1_div {
+  margin: 20px auto;
+}
+
+
+.head_bread {
+  margin: 10px auto;
+  color:aqua;  
+}

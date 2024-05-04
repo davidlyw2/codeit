@@ -1,0 +1,94 @@
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+
+  width: 360px;
+}
+
+h1 {
+  color: #4e4e4e;
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+  
+  margin-top: 120px;
+  margin-bottom: 24px;
+  
+  width: 360px;
+}
+
+.question-password {
+  color: #ababab;
+  text-align: right;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  width: 360px;
+}
+
+.question-member {
+  color: #ababab;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  width: 360px;
+}
+
+.subscribe {
+  color: #2c2c2c;
+}
+
+label {
+
+  color: #2c2c2c;
+  text-align: left;
+  display: block;
+  margin: 16px 0 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  width: 360px;
+}
+ 
+
+/* input box */
+input {
+  display: block;
+  padding: 16px 24px;
+  margin: 8px 0;
+
+  border: 1px solid #d1d1d1;
+  width: 360px;
+}
+
+input::placeholder {
+  color: #ababab;
+}
+
+button {
+  border: none;
+  display: block;
+  padding: 16px;
+  margin: 24px 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  width: 360px;
+}
+
+
+

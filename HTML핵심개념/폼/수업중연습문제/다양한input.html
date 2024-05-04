@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Various Input</title>
+</head>
+<body>
+  <!-- checkbox -->
+  <p>
+    <label>한개만 선택할 경우<br></label>
+    <label>
+      <input name="agreement" type="checkbox">
+      동의합니다
+    </label>
+  </p>
+  <p>
+    <label for="film">좋아하는 영화 장르</label>
+    <label>
+      <input name="film" type="checkbox" value="action">
+      액션
+    </label>
+    <label>
+      <input name="film" type="checkbox" value="comedy">
+      코미디
+    </label>
+    <label>
+      <input name="film" type="checkbox" value="romance">
+      로맨스
+    </label>
+  </p>
+  <!-- date -->
+  <p>
+    <label> 생일
+      <input name="birthdate" type="date">
+    </label>
+  </p>
+  <!-- file 
+    정말 많이 쓰이는 중요한 타입
+    선택할 파일 수 지정
+    파일형식 지정
+  -->
+  <p>
+    <label> 한개 파일 선택
+      <input name="avatar" type="file" accept=".html, .png, .jpg">
+      여러개 파일 선택
+      <input name="photos" type="file" accept=".html, .png, .jpg" multiple>
+    </label>
+  </p>
+  <!-- email -->
+  <p>
+    <label>email(..@..)
+      <input name="email" type="email">
+    </label>
+  </p>
+  <!-- number 
+    숫자를 입력하고, 최소/최대값이나 버튼을 눌렀을 때 증가, 감소할 양을 정할 수 있다.
+  -->
+  <p>
+    <label>number:
+      <input name="number" type="number">
+      <input name="range" type="number" min="100" max="1000">
+      <input name="inc_dec" type="number" min="100" max="1000" step="100">
+    </label>
+  </p>
+  <!-- password -->
+  <p>
+    <label>Password
+      <input name="password" type="password">
+    </label>
+  </p>
+  <!-- radio : 동그란 선택버튼 -->
+  <p>
+    <label> radio:</label>
+    <input id="very-bad" name="feeling" value="0" type="radio">
+    <label for="very-bad">아주 나쁨</label>
+    <input id="bad" name="feeling" value="1" type="radio">
+    <label for="bad">나쁨</label>
+    <input id="soso" name="feeling" value="2" type="radio">
+    <label for="soso">보통</label>
+    <input id="good" name="feeling" value="3" type="radio">
+    <label for="good">좋음</label>
+    <input id="very-good" name="feeling" value="4" type="radio">
+    <label for="very-good">아주 좋음</label>
+  </p>
+  <!-- range : 범위 -->
+  <p>
+    <label for="signup-feeling">range: 현재기분</label>
+    <input id="signup-feeling" name="feeling" min="1" max="10" type="range">
+  </p>
+  <!-- text : input타입의 기본값 -->
+  <p>
+    <label>text: </label>
+    <input name="nickname" type="text">
+  </p>
+  <!-- select : 옵션 선택-->
+  <p>
+    <label for="genre">select/option: 장르</label>
+    <select id="genre" name="genre">
+      <option value="korean">한국영화</option>
+      <option value="foreign">외국영화</option>
+      <option value="drama">드라마</option>
+      <option value="documentary">다뮤멘터리</option>
+      <option value="vareity">예능</option>
+    </select>
+  </p>
+  <!-- textarea : 긴글 -->
+  <p>
+    <label>&lt;input&gt;태그와 달리 반드시 종료태그(&lt;textarea&gt;)를 써 주어야 함</label>
+    <br>
+    <textarea name="content"></textarea>
+  </p>
+</body>
+</html>

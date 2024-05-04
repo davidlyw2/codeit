@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    ol.ol_type1 {
+      /* none: 순서가 없는 리스트에 자주 사용함.*/
+      list-style: hangul /* disc */;
+    }
+
+    ul.ul_type1 {
+      /* HTML로는 리스트이지만, 눈에 보이는 모습은 본문처럼 보이는데, 많이 사용한다. */
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    /* ul 밑에 있는 각 리스트 아이템 li 들을 다음과 같이 꾸밀 수도 있다. */
+    /* 내가 원하는 디자인으로 보여주면서도 HTML 상에서는 명확하게 목록이라는 의미를 나타낼 수 있기 때문에
+       자주 쓰이는 방법이다. */
+    ul.ul_type1 > li {
+      display: inline-block;
+      border: 1px solid #dddddd;
+      border-radius: 24px;
+      padding: 8px;
+    }
+  </style>
+
+</head>
+<body>
+  <h2>상영작 순위</h2>
+  <p>
+    <!-- 순서 리스트: ordered list(ol), list item(li) 사용 -->
+    <!-- 순서 리스트의 표시되는 모양을 꾸며주고 싶을 때 -->
+    <!-- 1) <ol type="A" , "a", "i", "I", "1" -->
+    <!-- 2) 더 자주 사용하는 방법은 <style></style> 태그를 쓰는 방법이다. 위 참조 -->
+    <ol class="ol_type2" type="1">
+      <li>라라랜드</li>
+      <li>명량</li>
+      <li>극한직업</li>
+      <li>신과함께: 죄와 벌</li>
+      <li>국제시장</li>
+      <li>어벤저스: 엔드게임</li>
+    </ol>
+    <ol class="ol_type3" type="A">
+      <li>라라랜드</li>
+      <li>명량</li>
+      <li>극한직업</li>
+      <li>신과함께: 죄와 벌</li>
+      <li>국제시장</li>
+      <li>어벤저스: 엔드게임</li>
+    </ol>
+
+    <ol class="ol_type1">
+      <li>라라랜드</li>
+      <li>명량</li>
+      <li>극한직업</li>
+      <li>신과함께: 죄와 벌</li>
+      <li>국제시장</li>
+      <li>어벤저스: 엔드게임</li>
+    </ol>
+
+    <!-- 순서가 없는 리스트: unordered list(ul), list item(li) -->
+    <ul class="ul_type1">
+      <li>한국 영화</li>
+      <li>외국 영화</li>
+      <li>드라마</li>
+      <li>예능</li>
+      <li>영화</li>
+      <li>프로야구</li>
+    </ul>
+  </p>
+</body>
+</html>

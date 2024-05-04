@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- href에 현재와 같이 사용하면 "현재 탭"에서 아래 싸이트가 열린다. -->
+  <a href="https://www.rottentomatoes.com/">
+     로튼 토마토 영화 - target 속성을 사용하지 않을 경우 현재 창에서 열림. 기본값
+  </a>
+  <br>
+  <!-- 새창에서 싸이트가 열리게 하려면 target 속성 사용. -->
+  <!-- target="_blank" -->
+  <a href="https://www.rottentomatoes.com/" target="_blank">
+    로튼 토마토 영화 - 새 창/탭에서 열기 : target="_blank"
+  </a>
+  <br>
+  <!-- 현재 창에서 싸이트가 열리게 하려면 target 속성 사용. -->
+  <!-- target="_self" -->
+  <a href="https://www.rottentomatoes.com/" target="_self">
+    로튼 토마토 영화 - 현재 창/탭에서 열기 : target="_self"
+  </a>
+  <br>
+  <!-- 새 창에서 싸이트가 열리게 하려면 target 속성 사용. 새창의 이름은 movie로 임의로 정함 -->
+  <!-- target="movie" -->
+  <a href="https://www.rottentomatoes.com/" target="movie">
+    로튼 토마토 영화 - 내가 만든 새창/탭에서 열기 : target="movie"라고 임의로 내가 지음
+  </a>
+  <br>
+  <!-- 이 후에 아무 창이나 "movie"라는 이름으로 열린 창에서만 열리도록 할 수 있다. -->
+  <!-- target="movie" -->
+  <a href="https://www.naver.com/" target="movie">
+    네이버 - 내가 만든 새창/탭에서 열기 : target="movie"라고 임의로 내가 지음
+  </a>
+  <br>
+  <a href="https://www.google.com/" target="movie">
+    구글 - 내가 만든 새창/탭에서 열기 : target="movie"라고 임의로 내가 지음
+  </a>
+  <br>
+  <a href="https://movie.daum.net/" target="movie">
+    다음 - 내가 만든 새창/탭에서 열기 : target="movie"라고 임의로 내가 지음
+  </a>
+  <br>
+  
+  <!-- test@example.com으로 이메일 보내기 -->
+  <a href="mailto:test@example.com">메일 보내기</a>
+  <br>
+  
+  <!-- 한국의 010-1234-0123으로 전화걸기 -->
+  <a href="tel:+821073434840">전화 걸기</a>
+  <br>
+
+</body>
+</html>
